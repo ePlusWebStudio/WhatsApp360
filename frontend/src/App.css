@@ -1,0 +1,315 @@
+/* App.css */
+
+* {
+  direction: rtl;
+  text-align: right;
+}
+
+html, body {
+  direction: rtl;
+}
+
+.App {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Custom styles for the admin panel */
+.admin-layout {
+  min-height: 100vh;
+  direction: rtl;
+}
+
+.admin-sider {
+  background: #001529;
+  direction: rtl;
+}
+
+.admin-logo {
+  height: 64px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  direction: rtl;
+}
+
+.admin-menu {
+  background: transparent;
+  direction: rtl;
+}
+
+.admin-content {
+  margin: 24px 16px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+  direction: rtl;
+}
+
+.admin-header {
+  background: #fff;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #001529;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row-reverse;
+}
+
+.stats-card {
+  text-align: center;
+}
+
+.stats-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.stats-label {
+  color: #666;
+  margin-top: 8px;
+}
+
+.ant-table-wrapper {
+  margin-top: 24px;
+  direction: rtl;
+}
+
+.ant-table {
+  direction: rtl;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+  text-align: right;
+}
+
+.ant-form-item-label > label {
+  text-align: right;
+}
+
+.ant-btn-primary {
+  background: #001529;
+  border-color: #001529;
+}
+
+.ant-btn-primary:hover {
+  background: #003a8c;
+  border-color: #003a8c;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.error-message {
+  color: #ff4d4f;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.success-message {
+  color: #52c41a;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Ant Design RTL Overrides */
+.ant-layout {
+  direction: rtl;
+}
+
+.ant-layout-sider {
+  direction: rtl;
+}
+
+.ant-layout-content {
+  direction: rtl;
+}
+
+.ant-menu {
+  direction: rtl;
+}
+
+.ant-menu-item {
+  text-align: right;
+}
+
+.ant-card {
+  direction: rtl;
+}
+
+.ant-card-head {
+  text-align: right;
+}
+
+.ant-modal {
+  direction: rtl;
+}
+
+.ant-modal-content {
+  direction: rtl;
+}
+
+.ant-input,
+.ant-input-number,
+.ant-select,
+.ant-picker {
+  direction: rtl;
+}
+
+.ant-input::placeholder {
+  text-align: right;
+}
+
+.ant-select-selector {
+  direction: rtl;
+  text-align: right;
+}
+
+.ant-dropdown {
+  direction: rtl;
+}
+
+.ant-dropdown-menu {
+  direction: rtl;
+}
+
+.ant-message {
+  direction: rtl;
+}
+
+.ant-notification {
+  direction: rtl;
+}
+
+/* Button Styles */
+.ant-btn {
+  text-align: center;
+}
+
+.ant-btn-icon-only {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-logo {
+    font-size: 14px;
+  }
+
+  .stats-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* Fix for RTL Layout */
+.ant-layout-sider-trigger {
+  direction: rtl;
+}
+
+.ant-layout-sider-zero-width-trigger {
+  direction: rtl;
+}
+
+/* Tooltip RTL */
+.ant-tooltip {
+  direction: rtl;
+}
+
+.ant-tooltip-inner {
+  text-align: right;
+}
+
+/* Popover RTL */
+.ant-popover {
+  direction: rtl;
+}
+
+.ant-popover-inner {
+  direction: rtl;
+}
+
+/* Table RTL */
+.ant-table-thead > tr > th {
+  text-align: right;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: right;
+}
+
+/* Pagination RTL */
+.ant-pagination {
+  direction: rtl;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+/* Breadcrumb RTL */
+.ant-breadcrumb {
+  direction: rtl;
+}
+
+.ant-breadcrumb-link {
+  text-align: right;
+}
+
+/* Steps RTL */
+.ant-steps {
+  direction: rtl;
+}
+
+/* Tabs RTL */
+.ant-tabs {
+  direction: rtl;
+}
+
+.ant-tabs-tab {
+  text-align: right;
+}
+
+/* Tree RTL */
+.ant-tree {
+  direction: rtl;
+}
+
+/* Collapse RTL */
+.ant-collapse {
+  direction: rtl;
+}
+
+.ant-collapse-header {
+  text-align: right;
+}
+
+/* Spin RTL */
+.ant-spin {
+  direction: rtl;
+}

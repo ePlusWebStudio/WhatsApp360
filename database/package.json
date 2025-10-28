@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hijri-to-gregorian": "^1.0.1"
+  }
+}
