@@ -165,10 +165,10 @@ INSERT INTO message_templates (template_name, template_type, content, variables,
 -- Create indexes for better performance
 CREATE INDEX idx_messages_user_date ON messages(user_id, sent_at);
 CREATE INDEX idx_interactions_user_type ON interactions(user_id, interaction_type);
-CREATE INDEX idx_courses_upcoming ON courses(schedule_date) WHERE schedule_date >= NOW();
+CREATE INDEX idx_courses_upcoming ON courses(schedule_date);
 
 -- Set default character set for the database
-ALTER DATABASE wa_bot_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER DATABASE eplus_wabot CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- Display completion message
 SELECT 'Database schema created successfully!' as status;

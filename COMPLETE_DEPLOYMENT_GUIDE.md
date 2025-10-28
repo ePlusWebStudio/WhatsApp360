@@ -88,13 +88,13 @@ git clone https://github.com/your-repo/wa-bot.git .
 mysql -u root -p
 
 # إنشاء قاعدة البيانات
-CREATE DATABASE wa_bot_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE eplus_wabot CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 # إنشاء مستخدم
-CREATE USER 'wa_bot_user'@'localhost' IDENTIFIED BY 'strong_password_here';
+CREATE USER 'eplus_wabot_admin'@'localhost' IDENTIFIED BY 'strong_password_here';
 
 # منح الصلاحيات
-GRANT ALL PRIVILEGES ON wa_bot_db.* TO 'wa_bot_user'@'localhost';
+GRANT ALL PRIVILEGES ON eplus_wabot.* TO 'eplus_wabot_admin'@'localhost';
 FLUSH PRIVILEGES;
 
 # الخروج
@@ -107,7 +107,7 @@ EXIT;
 cd /var/www/html/wa-bot
 
 # استيراد الجداول
-mysql -u wa_bot_user -p wa_bot_db < database/schema.sql
+mysql -u eplus_wabot_admin -p eplus_wabot < database/schema.sql
 ```
 
 ---
@@ -125,9 +125,9 @@ npm install
 cat > .env << EOF
 DB_HOST=localhost
 DB_PORT=3306
-DB_USER=wa_bot_user
+DB_USER=eplus_wabot_admin
 DB_PASSWORD=strong_password_here
-DB_NAME=wa_bot_db
+DB_NAME=eplus_wabot
 NODE_ENV=production
 PORT=3000
 EOF
@@ -401,7 +401,7 @@ pm2 restart wa-bot-backend
 ### المشكلة: قاعدة البيانات غير متصلة
 ```bash
 # اختبر الاتصال
-mysql -u wa_bot_user -p wa_bot_db -e "SELECT 1"
+mysql -u eplus_wabot_admin -p eplus_wabot -e "SELECT 1"
 
 # تحقق من بيانات الاعتماد في .env
 cat backend/.env
